@@ -1,0 +1,49 @@
+.toolbar {
+  position: relative;
+  width: 100%;
+  background-color: rgb(72, 86, 209);
+  overflow: hidden;
+}
+
+.logo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.toolbar_logo {
+  margin-left: 0.5rem;
+}
+
+.spacer {
+  flex: 0.05;
+}
+
+.toolbar_navigation {
+  display: flex;
+  height: 100%;
+
+  padding: 0 1 rm;
+}
+
+.toolbar_items a {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  display: inline-flex;
+  padding: 20px 20px;
+}
+
+.toolbar_items a:active,
+.toolbar_items a:hover {
+  color: rgb(37, 241, 19);
+}
+
+@media (max-width: 500px) {
+  .toolbar_items {
+    display: none;
+  }
+}

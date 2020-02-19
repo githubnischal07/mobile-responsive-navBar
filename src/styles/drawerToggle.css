@@ -1,0 +1,26 @@
+#three-stripes {
+  padding: 10px 0 0 10px;
+}
+
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  width: 36px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1;
+  box-sizing: border-box;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.tb-line {
+  width: 30px;
+  height: 3px;
+  background: white;
+}

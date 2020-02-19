@@ -1,0 +1,7 @@
+.mapBox {
+  border-style: dotted;
+  border-width: 5px;
+  border-color: rebeccapurple;
+  width: 50%;
+  height: 50%;
+}
