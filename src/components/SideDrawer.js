@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import "../styles/sideDrawer.css";
 
 const SideDrawer = props => {
+  //USing this so that if props=show in app.js is true
+  //then, the class changes from "side-drawer" to
+  // side-drawer open.... But in .css its
+  //.side-drawer.open
   let drawerClasses = "side-drawer";
   if (props.show) {
     drawerClasses = "side-drawer open";

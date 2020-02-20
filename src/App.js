@@ -1,11 +1,7 @@
+//Creating a new commit on github for practice - don't mind
+
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Link,
-  Switch,
-  Redirect,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //styles
 import "./styles/app.css";
@@ -29,16 +25,22 @@ const NoPage = () => {
 };
 
 class App extends React.Component {
+  //If constructor's super is not called this.props.___
+  //can be written as props.____
   state = {
     sideDrawerOpen: false
   };
 
+  //function that have para prevState which
+  // means if the toggle button is clicked then, the
+  // previous state is changed to false or true(negation of the sideDrawerOpen state)
   drawerTogClick = () => {
     this.setState(prevState => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
 
+  //function that changes the state to false if the backdrop section is clicked
   backdropClickHandler = () => {
     this.setState({
       sideDrawerOpen: false
@@ -49,6 +51,7 @@ class App extends React.Component {
     let sideDrawer;
     let backdrop;
 
+    //If the side drawer is open create a backdrop
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
